@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --lightcolor: rgb(234, 240, 240);
+  --darkcolor: rgb(0, 94, 97) ;
+}
+
+@font-face {
+  font-family: 'playfair';
+  src: url("/styles/fonts/playfair.tff");
+}
+
+body {
+  text-align: center;
+  background-color: #fff;
+  font-family: 'playfair';
+  margin-bottom: 40px;
+}
+
+header {
+  background-color: var(--darkcolor);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+header h1 {
+  color: var(--lightcolor);
+  margin: 3px;
+  padding: 3px;
+  letter-spacing: 1.5px;
+}
+
+header nav button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--lightcolor);
+  color: var(--darkcolor);
+  border: var(--darkcolor) 1px solid;
+  padding: 3px;
+  margin: 3px;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+}
+
+header nav button:hover {
+  background-color: var(--darkcolor);
+  color: var(--lightcolor);
+  border: var(--lightcolor) 1px solid;
+}
+
+.active {
+  background-color: #9eb7b8;
+  color: var(--darkcolor);
+}
+
+.active:hover {
+  background-color: #9eb7b8;
+}
+
+#footer {
+  background-color: var(--darkcolor);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: var(--lightcolor);
+  padding-top: 5px;
+  margin-top: 5px;
+  height: 40px;
+}
+
+#footer h3 {
+  padding: 3px;
+  margin: 3px;
+}
+
+.home-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--darkcolor);
+  padding: 10px;
+  width: 100%;
+  height: 85vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  overflow: scroll;
+}
+
+.home-section p {
+  font-size: 1.5rem;
+}
+
+.home-section .imgDiv {
+  width: 400px;
+}
+
+.home-section .imgDiv img {
+  width: 100%;
+  max-height: 450px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.wine-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: scroll;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: var(--darkcolor);
+}
+
+.wine-list .wine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.wine-list .wine img {
+  width: 100%;
+}
+
+.wine-list .wine p {
+  font-size: 1.2rem;
+}
+
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: scroll;
+  color: var(--darkcolor);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contact-section h3 {
+  padding: 3px;
+  margin: 3px;
+  font-size: 1.5rem;
+}
+
+.contact-section .imgDiv {
+  max-height: 600px;
+  width: 60%;
+}
+
+.contact-section .imgDiv img {
+  width: 100%;
+  max-height: 500px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  padding: 3px;
+}
+
+.contact-section .socialdiv a {
+  text-decoration: none;
+}
+
+.contact-section .socialdiv svg {
+  margin: 10px;
+  cursor: pointer;
+  color: var(--darkcolor);
+}
+
+@media only screen and (max-width: 940px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-section .imgDiv img {
+    max-height: 350px;
+  }
+}
+/*# sourceMappingURL=stylesmain.css.map */

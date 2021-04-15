@@ -1,0 +1,26 @@
+{
+  "name": "restaurantdemopage",
+  "version": "1.0.0",
+  "description": "One page website generated completely with js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junjie9145/restaurantDemoPage.git"
+  },
+  "author": "James Neal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junjie9145/restaurantDemoPage/issues"
+  },
+  "homepage": "https://github.com/junjie9145/restaurantDemoPage#readme",
+  "devDependencies": {
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
+}
