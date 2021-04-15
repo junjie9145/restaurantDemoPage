@@ -11,7 +11,7 @@ function createHome () {
     imgDiv.classList.add('imgDiv');
     home.appendChild(imgDiv);
 
-    const img = createImg('/src/imgs/homeimg.jpg');
+    const img = createImg('/dist/imgs/homeimg.jpg');
     imgDiv.appendChild(img);
 
     const about = document.createElement('p');

@@ -43,11 +43,11 @@ function loadWineList() {
     setActive('wines');
     
     const list = [
-        wineListItem('/src/imgs/merlot.jpg', 'Merlot', 2015),
-        wineListItem('/src/imgs/riesling.jpg', 'Riesling', 2013),
-        wineListItem('/src/imgs/sauvignonblanc.jpg', 'Sauvignon Blanc', 2017),
-        wineListItem('/src/imgs/rose.jpg', 'Rose', 2018),
-        wineListItem('/src/imgs/pinogrigio.jpeg', 'Pino Grigio', 2011)
+        wineListItem('/dist/imgs/merlot.jpg', 'Merlot', 2015),
+        wineListItem('/dist/imgs/riesling.jpg', 'Riesling', 2013),
+        wineListItem('/dist/imgs/sauvignonblanc.jpg', 'Sauvignon Blanc', 2017),
+        wineListItem('/dist/imgs/rose.jpg', 'Rose', 2018),
+        wineListItem('/dist/imgs/pinogrigio.jpeg', 'Pino Grigio', 2011)
         ];
 
     console.log(list)

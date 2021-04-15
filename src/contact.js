@@ -64,7 +64,7 @@ function loadContact() {
 
     contactSection.appendChild(title);
 
-    const winery = makeImg('/src/imgs/winery.jpg');
+    const winery = makeImg('/dist/imgs/winery.jpg');
     contactSection.appendChild(winery);
 
     const contactInfo = detailFactory('5 Old Coutry RD', '(555)555-5555', 'wallaSquared@fake.wine')
